@@ -1,2 +1,4 @@
-# one-with-the-hooks
-Experiments with React Hooks
+# One with the Hooks
+
+Experiments with new [React Hooks](https://reactjs.org/docs/hooks-intro.html) API.
+
