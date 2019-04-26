@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import {InrementDecrement, CountDown} from './src'
+
 import './App.css';
 
 function App() {
-  const [number, setNumber] = useState(0)
-
   return (
     <div className="App">
       <h2>Experimenting with React Hooks</h2>
 
-      <h4>Current Value: {number}</h4>
+      <h5>Using State</h5>
+      <InrementDecrement />
 
-      <p>Click button to increment the number</p>
+      <h5>Using State and Effect</h5>
+      <CountDown minutes={5} />
 
-      <button onClick={() => setNumber(number + 1)}>Increment</button>
-      <button onClick={() => setNumber(number - 1)}>Decrement</button>
     </div>
   );
 }
